@@ -1,1 +1,94 @@
 @import "tailwindcss";
+
+body {
+    @apply lg:mt-4 lg:mb-4 md:ml-20 md:mr-20 lg:p-5 p-2
+}
+
+.menu-title {
+    @apply text-3xl md:text-5xl font-bold text-teal-50 bg-cyan-700 text-center rounded-lg pt-4 pb-4 text-shadow-xs text-shadow-amber-200
+}
+
+.menu-container {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 mt-2 text-center bg-cyan-700 rounded-lg
+}
+
+.menu-header {
+    @apply bg-teal-50 rounded-lg m-4 p-2
+}
+
+.menu-header h2 {
+    @apply text-3xl text-cyan-900
+}
+
+.menu-header p {
+    @apply text-xs pl-2 pr-2
+}
+
+.menu-divider {
+    @apply border-dotted border-t-3 border-cyan-700 mr-4 ml-4 mt-2 mb-2
+}
+
+.menu-category {
+    @apply row-span-3 bg-cyan-200 rounded-lg
+}
+
+.menu-list {
+    @apply m-4 max-h-50 overflow-y-scroll
+}
+
+.menu-item {
+    @apply bg-teal-50 rounded-lg p-2 mb-2 w-auto text-left
+}
+
+.menu-item h3 {
+    @apply text-xl underline underline-offset-5 text-cyan-900
+}
+
+.menu-item p {
+    @apply pt-2 text-cyan-900
+}
+
+.menu-tags div {
+    @apply grid grid-cols-1 
+}
+
+.menu-tags p {
+    @apply bg-gray-300 p-1 pl-2 pr-2 mb-1 mt-1 w-fit rounded-xl text-xs shadow-xs shadow-cyan-950
+}
+
+.menu-tags > .type {
+    @apply bg-purple-200
+}
+
+.menu-tags > .time {
+    @apply bg-amber-200
+}
+
+.menu-tags > .length {
+    @apply bg-green-200
+}
+
+.menu-tags > .participants {
+    @apply bg-red-200
+}
+
+.menu-tags > .location {
+    @apply bg-blue-200
+}
+
+.menu-tags > .cost {
+    @apply bg-lime-200
+}
+
+.menu-select {
+    @apply bg-teal-50 p-2 m-4 rounded-lg
+}
+
+.menu-select button {
+    @apply bg-cyan-600 text-teal-50 object-left pt-2 pb-2 pl-4 pr-4 hover:bg-cyan-700 rounded-xl
+}
+
+.menu-select details {
+    @apply text-cyan-900 text-left
+}
+
