@@ -4,6 +4,38 @@ body {
     @apply lg:mt-4 lg:mb-4 md:ml-20 md:mr-20 lg:p-5 p-2
 }
 
+form {
+    @apply flex flex-wrap gap-1
+}
+
+.filter {
+    @apply rounded-2xl bg-gray-300 p-1.5 w-fit
+}
+
+form > .type {
+    @apply bg-purple-200
+}
+
+form > .time {
+    @apply bg-yellow-200
+}
+
+form > .length {
+    @apply bg-green-200
+}
+
+form > .participants {
+    @apply bg-red-200
+}
+
+form > .location {
+    @apply bg-blue-200
+}
+
+form > .cost {
+    @apply bg-lime-200
+}
+
 .menu-title {
     @apply text-3xl md:text-5xl font-bold text-teal-50 bg-cyan-700 text-center rounded-lg pt-4 pb-4 text-shadow-xs text-shadow-amber-200
 }
@@ -33,7 +65,11 @@ body {
 }
 
 .menu-list {
-    @apply m-4 max-h-50 overflow-y-scroll
+    @apply m-4 max-h-75 overflow-y-scroll
+}
+
+.menu-list details {
+    @apply text-cyan-600
 }
 
 .menu-item {
@@ -45,15 +81,23 @@ body {
 }
 
 .menu-item p {
-    @apply pt-2 text-cyan-900
+    @apply pt-1 text-cyan-900
 }
 
-.menu-tags div {
-    @apply grid grid-cols-1 
+.menu-item details {
+    @apply pt-1
+}
+
+.menu-item details > ul {
+    @apply pl-5 list-disc
+}
+
+.menu-tags {
+    @apply flex flex-wrap gap-x-1
 }
 
 .menu-tags p {
-    @apply bg-gray-300 p-1 pl-2 pr-2 mb-1 mt-1 w-fit rounded-xl text-xs shadow-xs shadow-cyan-950
+    @apply bg-gray-300 p-1 pl-2 pr-2 mt-2 w-fit rounded-xl text-xs shadow-xs shadow-cyan-950
 }
 
 .menu-tags > .type {
@@ -85,7 +129,7 @@ body {
 }
 
 .menu-select button {
-    @apply bg-cyan-600 text-teal-50 object-left pt-2 pb-2 pl-4 pr-4 hover:bg-cyan-700 rounded-xl
+    @apply bg-cyan-600 text-teal-50 object-left pt-2 pb-2 pl-4 pr-4 hover:bg-cyan-700 rounded-xl w-full
 }
 
 .menu-select details {
