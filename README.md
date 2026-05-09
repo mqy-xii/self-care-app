@@ -6,3 +6,4 @@ The selection of items are tailored to me and what "fills **my** cup," but many 
 ## To-Do
 - [ ] Add working tag filters
 - [ ] Customize result pop-up (animation?)
+- [ ] Add fun icons on the corners of some of the item boxes
