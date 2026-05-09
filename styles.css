@@ -37,7 +37,7 @@ form > .cost {
 }
 
 .menu-title {
-    @apply text-3xl md:text-5xl font-bold text-teal-50 bg-cyan-700 text-center rounded-lg pt-4 pb-4 text-shadow-xs text-shadow-amber-200
+    @apply text-2xl sm:text-5xl font-bold text-teal-50 bg-cyan-700 text-center rounded-lg pt-4 pb-4 text-shadow-xs text-shadow-amber-200
 }
 
 .menu-container {
