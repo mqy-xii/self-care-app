@@ -6,11 +6,22 @@
     <title>Dopamenu</title>
     <link href="output.css" rel="stylesheet">
 </head>
-<body class="bg-teal-50">
+<body>
     <h1 class="menu-title">
         ✨🌈🐬 Dopamenu 🐬🌈✨
     </h1>
     <p class="mt-1 text-cyan-600">Remember to take intentional breaks at least every one to two hours; maybe even consider an appetizer!</p>
+    <div class="hidden" id="pop-up">
+        <div class="fixed bg-black opacity-50 top-0 left-0 w-dvw h-dvh" id="pop-up-bg"></div>
+        <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 max-w-100 bg-cyan-700 overflow-hidden p-2 rounded-xl shadow-cyan-950 shadow-md" id="pop-up-box">
+            <div class="bg-cyan-200 p-4 rounded-lg">
+                <p class="fixed top-7 right-7 pl-2.25 pr-2.25 pb-0.5 rounded-4xl bg-white border-cyan-950 border cursor-pointer" id="pop-up-close">x</p>
+                <div class="pb-2" id="pop-up-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat optio ratione ex? Possimus, hic. Adipisci, eaque rem quos recusandae sit quo hic soluta dolores assumenda laboriosam magni laborum est.</div>
+                <button class="bg-cyan-600 text-teal-50 object-left pt-2 pb-2 pl-4 pr-4 hover:bg-cyan-700 rounded-xl w-full">🎲 Re-roll</button>
+                <button class="bg-cyan-600 text-teal-50 object-left pt-2 pb-2 pl-4 pr-4 hover:bg-cyan-700 rounded-xl w-full mt-1 specials-button">Add a side</button>
+            </div>
+        </div>
+    </div>
     <div class="menu-container">
         <div class="menu-category">
             <div class="menu-header">

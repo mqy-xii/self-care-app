@@ -31,11 +31,17 @@ document.getElementById("specials-list").innerHTML = specials.map(item => render
 
 const generateRandomItem = (list, filters) => {
     let result = Math.floor(Math.random() * list.length)
-    console.info(result)
-    console.info(list[result].name)
-    if (list[result].suggestions) return list[result].name + `\nSuggestions:\n` + list[result].suggestions
-    return list[result].name
+    return renderMenuItem(list[result])
+    // console.info(result)
+    // console.info(list[result].name)
+    // if (list[result].suggestions) return list[result].name + `\nSuggestions:\n` + list[result].suggestions
+    // return list[result].name
 }
+
+const popUp = document.getElementById("pop-up")
+const popUpBG = document.getElementById("pop-up-bg")
+const popUpText = document.getElementById("pop-up-text")
+const popUpClose = document.getElementById("pop-up-close")
 
 const appsButton = document.querySelector("#appetizers-button")
 const entreesButton = document.querySelector("#entrees-button")
@@ -44,18 +50,18 @@ const sidesButton = document.querySelector("#sides-button")
 const specialsButton = document.querySelector("#specials-button")
 
 appsButton.addEventListener("click", () => {
-    console.info("Generating appetizer...")
-    alert(generateRandomItem(appetizers))
+    popUpText.innerHTML = generateRandomItem(appetizers)
+    popUp.classList.remove('hidden')
 })
 
 entreesButton.addEventListener("click", () => {
-    console.info("Generating entree...")
-    alert(generateRandomItem(entrees))
+    popUpText.innerHTML = generateRandomItem(entrees)
+    popUp.classList.remove('hidden')
 })
 
 sidesButton.addEventListener("click", () => {
-    console.info("Generating side...")
-    alert(generateRandomItem(sides))
+    popUpText.innerHTML = generateRandomItem(sides)
+    popUp.classList.remove('hidden')
 })
 
 // dessertsButton.addEventListener("click", () => {
@@ -64,6 +70,14 @@ sidesButton.addEventListener("click", () => {
 // })
 
 specialsButton.addEventListener("click", () => {
-    console.info("Generating special...")
-    alert(generateRandomItem(specials))
+    popUpText.innerHTML = generateRandomItem(specials)
+    popUp.classList.remove('hidden')
+})
+
+popUpBG.addEventListener("click", () => {
+    popUp.classList.add('hidden')
+})
+
+popUpClose.addEventListener("click", () => {
+    popUp.classList.add('hidden')
 })

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-    @apply lg:mt-4 lg:mb-4 md:ml-20 md:mr-20 lg:p-5 p-2
+    @apply bg-linear-to-b from-teal-50 to-cyan-500 lg:mt-4 lg:mb-4 md:ml-20 md:mr-20 lg:p-5 p-2
 }
 
 form {
@@ -61,19 +61,19 @@ form > .cost {
 }
 
 .menu-category {
-    @apply row-span-3 bg-cyan-200 rounded-lg
+    @apply row-span-3 bg-linear-to-b from-cyan-100 to-cyan-300 rounded-lg
 }
 
 .menu-list {
     @apply m-4 max-h-75 overflow-y-scroll
 }
 
-.menu-list details {
-    @apply text-cyan-600
+.menu-item details {
+    @apply text-cyan-600 text-left
 }
 
 .menu-item {
-    @apply bg-teal-50 rounded-lg p-2 mb-2 w-auto text-left
+    @apply bg-teal-50 rounded-lg p-2 mb-2 w-auto text-left list-none
 }
 
 .menu-item h3 {
