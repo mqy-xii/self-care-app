@@ -347,6 +347,7 @@
   }
 }
 body {
+  min-height: 100dvh;
   --tw-gradient-position: to bottom;
   @supports (background-image: linear-gradient(in lab, red, red)) {
     --tw-gradient-position: to bottom in oklab;
@@ -367,9 +368,6 @@ body {
   }
   @media (width >= 64rem) {
     margin-bottom: calc(var(--spacing) * 4);
-  }
-  @media (width >= 64rem) {
-    padding: calc(var(--spacing) * 5);
   }
 }
 form {

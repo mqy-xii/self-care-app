@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-    @apply bg-linear-to-b from-teal-50 to-cyan-500 lg:mt-4 lg:mb-4 md:ml-20 md:mr-20 lg:p-5 p-2
+    @apply bg-linear-to-b from-teal-50 to-cyan-500 lg:mt-4 lg:mb-4 md:ml-20 md:mr-20 p-2 min-h-dvh
 }
 
 form {
