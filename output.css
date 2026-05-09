@@ -8,18 +8,23 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-200: oklch(88.5% 0.062 18.334);
+    --color-orange-200: oklch(90.1% 0.076 70.697);
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-yellow-200: oklch(94.5% 0.129 101.54);
     --color-lime-200: oklch(93.8% 0.127 124.321);
     --color-green-200: oklch(92.5% 0.084 155.995);
+    --color-emerald-200: oklch(90.5% 0.093 164.15);
     --color-teal-50: oklch(98.4% 0.014 180.72);
     --color-cyan-200: oklch(91.7% 0.08 205.041);
     --color-cyan-600: oklch(60.9% 0.126 221.723);
     --color-cyan-700: oklch(52% 0.105 223.128);
+    --color-cyan-800: oklch(45% 0.085 224.283);
     --color-cyan-900: oklch(39.8% 0.07 227.392);
     --color-cyan-950: oklch(30.2% 0.056 229.695);
     --color-blue-200: oklch(88.2% 0.059 254.128);
+    --color-indigo-200: oklch(87% 0.065 274.039);
     --color-purple-200: oklch(90.2% 0.063 306.703);
+    --color-fuchsia-200: oklch(90.3% 0.076 319.62);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
@@ -187,17 +192,14 @@
   }
 }
 @layer utilities {
-  .list-disc {
-    list-style-type: disc;
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .bg-teal-50 {
     background-color: var(--color-teal-50);
   }
-  .pt-1 {
-    padding-top: calc(var(--spacing) * 1);
-  }
-  .pl-5 {
-    padding-left: calc(var(--spacing) * 5);
+  .text-cyan-600 {
+    color: var(--color-cyan-600);
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -303,6 +305,7 @@ form > .cost {
   padding-left: calc(var(--spacing) * 2);
   font-size: var(--text-xs);
   line-height: var(--tw-leading, var(--text-xs--line-height));
+  color: var(--color-cyan-700);
 }
 .menu-divider {
   margin-top: calc(var(--spacing) * 2);
@@ -339,7 +342,7 @@ form > .cost {
 .menu-item h3 {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
-  color: var(--color-cyan-900);
+  color: var(--color-cyan-800);
   text-decoration-line: underline;
   text-underline-offset: 5px;
 }
@@ -389,10 +392,16 @@ form > .cost {
   background-color: var(--color-red-200);
 }
 .menu-tags > .location {
-  background-color: var(--color-blue-200);
+  background-color: var(--color-indigo-200);
 }
 .menu-tags > .cost {
   background-color: var(--color-lime-200);
+}
+.menu-tags > .seasonal {
+  background-color: var(--color-fuchsia-200);
+}
+.menu-tags > .time-of-day {
+  background-color: var(--color-orange-200);
 }
 .menu-select {
   margin: calc(var(--spacing) * 4);
