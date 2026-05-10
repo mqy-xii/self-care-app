@@ -4,6 +4,7 @@ A dopamenu, or self care menu, attempts to combat burnout by taking more intenti
 
 The selection of items are tailored to me and what "fills **my** cup," but many of the items may be applicable to a wider audience.
 ## To-Do
+- [x] Customize result pop-up
+  - [ ] Animation?
 - [ ] Add working tag filters
-- [ ] Customize result pop-up (animation?)
 - [ ] Add fun icons on the corners of some of the item boxes
