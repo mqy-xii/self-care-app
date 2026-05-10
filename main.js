@@ -1,32 +1,32 @@
 import { appetizers, entrees, sides, desserts, specials } from "./data.js"
 
 function renderMenuItem(item) {
-  const tagsHtml = item.tags
+    const tagsHtml = item.tags
     .map(tag => `<p class="${tag.type}">${tag.value}</p>`)
     .join('');
-
-  const suggestionsHtml = item.suggestions?.length
+    
+    const suggestionsHtml = item.suggestions?.length
     ? `<details>
-         <summary>Suggestions</summary>
-         <ul>
-           ${item.suggestions.map(s => `<li>${s}</li>`).join('')}
-         </ul>
-       </details>`
+    <summary>Suggestions</summary>
+    <ul>
+    ${item.suggestions.map(s => `<li>${s}</li>`).join('')}
+    </ul>
+    </details>`
     : '';
-
+    
   return `
     <li class="menu-item">
       <h3>${item.name}</h3>
       <div class="menu-tags">${tagsHtml}</div>
       ${suggestionsHtml}
-    </li>
-  `;
+      </li>
+      `;
 }
 
 document.getElementById("appetizers-list").innerHTML = appetizers.map(item => renderMenuItem(item)).join('')
 document.getElementById("entrees-list").innerHTML = entrees.map(item => renderMenuItem(item)).join('')
 document.getElementById("sides-list").innerHTML = sides.map(item => renderMenuItem(item)).join('')
-// document.getElementById("desserts-list").innerHTML = desserts.map(item => renderMenuItem(item)).join('')
+document.getElementById("desserts-list").innerHTML = desserts.map(item => renderMenuItem(item)).join('')
 document.getElementById("specials-list").innerHTML = specials.map(item => renderMenuItem(item)).join('')
 
 const generateRandomItem = (list, filters) => {
@@ -40,44 +40,75 @@ const generateRandomItem = (list, filters) => {
 
 const popUp = document.getElementById("pop-up")
 const popUpBG = document.getElementById("pop-up-bg")
+const popUpHeader = document.getElementById("pop-up-header")
 const popUpText = document.getElementById("pop-up-text")
 const popUpClose = document.getElementById("pop-up-close")
 
-const appsButton = document.querySelector("#appetizers-button")
-const entreesButton = document.querySelector("#entrees-button")
-const sidesButton = document.querySelector("#sides-button")
-// const dessertsButton = document.querySelector("#desserts-button")
-const specialsButton = document.querySelector("#specials-button")
+const sidesDiv = document.getElementById("pop-up-sides")
+const sidesHeader = document.getElementById("pop-up-sides-header")
+const sidesText = document.getElementById("pop-up-sides-text")
+
+const appsButton = document.getElementById("appetizers-button")
+const entreesButton = document.getElementById("entrees-button")
+const sidesButton = document.getElementById("sides-button")
+const dessertsButton = document.getElementById("desserts-button")
+const specialsButton = document.getElementById("specials-button")
+const rerollButton = document.getElementById("reroll-button")
+
+let recentCategory = ""
 
 appsButton.addEventListener("click", () => {
+    popUpHeader.innerHTML = `<h2>Appetizer:</h2>`
     popUpText.innerHTML = generateRandomItem(appetizers)
     popUp.classList.remove('hidden')
+    recentCategory = appetizers
 })
 
 entreesButton.addEventListener("click", () => {
+    popUpHeader.innerHTML = `<h2>Entree:</h2>`
     popUpText.innerHTML = generateRandomItem(entrees)
     popUp.classList.remove('hidden')
+    recentCategory = entrees
+})
+
+dessertsButton.addEventListener("click", () => {
+    popUpHeader.innerHTML = `<h2>Dessert:</h2>`
+    popUpText.innerHTML = generateRandomItem(desserts)
+    popUp.classList.remove('hidden')
+    recentCategory = desserts
+})
+
+specialsButton.addEventListener("click", () => {
+    popUpHeader.innerHTML = `<h2>Special:</h2>`
+    popUpText.innerHTML = generateRandomItem(specials)
+    popUp.classList.remove('hidden')
+    recentCategory = specials
+})
+
+rerollButton.addEventListener("click", () => {
+    popUpText.innerHTML = generateRandomItem(recentCategory)
 })
 
 sidesButton.addEventListener("click", () => {
-    popUpText.innerHTML = generateRandomItem(sides)
+    sidesHeader.innerHTML = `<h2>Side:</h2>` 
+    sidesText.innerHTML = generateRandomItem(sides)
+    sidesDiv.classList.remove('hidden')
     popUp.classList.remove('hidden')
 })
 
-// dessertsButton.addEventListener("click", () => {
-//     console.info("Generating dessert...")
-//     alert(generateRandomItem(desserts))
-// })
+function closePopUp() {
+    sidesDiv.classList.add('hidden')
+    popUp.classList.add('hidden')
+}
 
-specialsButton.addEventListener("click", () => {
-    popUpText.innerHTML = generateRandomItem(specials)
-    popUp.classList.remove('hidden')
+document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape") closePopUp()
 })
 
 popUpBG.addEventListener("click", () => {
-    popUp.classList.add('hidden')
+    closePopUp()
 })
 
 popUpClose.addEventListener("click", () => {
-    popUp.classList.add('hidden')
+    closePopUp()
 })
