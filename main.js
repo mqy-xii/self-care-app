@@ -32,10 +32,6 @@ document.getElementById("specials-list").innerHTML = specials.map(item => render
 const generateRandomItem = (list, filters) => {
     let result = Math.floor(Math.random() * list.length)
     return renderMenuItem(list[result])
-    // console.info(result)
-    // console.info(list[result].name)
-    // if (list[result].suggestions) return list[result].name + `\nSuggestions:\n` + list[result].suggestions
-    // return list[result].name
 }
 
 const popUp = document.getElementById("pop-up")

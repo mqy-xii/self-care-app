@@ -33,27 +33,6 @@ export const appetizers = Object.freeze([
         ]
     },
     {
-        name: "Make bed",
-        tags: [
-            {
-                type: "time",
-                value: "2 min"
-            },
-            {
-                type: "participants",
-                value: "Solo"
-            },
-            {
-                type: "length",
-                value: "Short Term"
-            },
-            {
-                type: "location",
-                value: "Home"
-            },
-        ]
-    },
-    {
         name: "Tidy an area",
         tags: [
             {
@@ -75,6 +54,55 @@ export const appetizers = Object.freeze([
             {
                 type: "type",
                 value: "Mind"
+            },
+        ],
+        suggestions: [
+            "Desk", "Floor"
+        ]
+    },
+    {
+        name: "Make bed",
+        tags: [
+            {
+                type: "time",
+                value: "2 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+        ]
+    },
+    {
+        name: "Brush teeth",
+        tags: [
+            {
+                type: "time",
+                value: "3 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             },
         ],
         suggestions: [
@@ -416,11 +444,60 @@ export const entrees = Object.freeze([
         tags: [
             {
                 type: "time",
-                value: "45 min"
+                value: "60 min"
+            },
+            {
+                type: "time-of-day",
+                value: "Afternoon"
+            },
+            {
+                type: "time-of-day",
+                value: "Evening"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ],
         suggestions: [
             "Pasta", "Pizza", "Pico de gallo"
+        ]
+    },
+    {
+        name: "Listen to a vinyl",
+        tags: [
+            {
+                type: "time",
+                value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ]
     },
     {
@@ -429,6 +506,26 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "type",
+                value: "Mind"
             }
         ],
         suggestions: [
@@ -439,20 +536,31 @@ export const entrees = Object.freeze([
         ]
     },
     {
-        name: "Listen to a vinyl",
-        tags: [
-            {
-                type: "time",
-                value: "45 min"
-            }
-        ]
-    },
-    {
         name: "Art study",
         tags: [
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
@@ -468,6 +576,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ]
     },
@@ -477,6 +601,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
@@ -491,6 +631,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ]
     },
@@ -500,12 +656,32 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
             "Personal website",
             "Personal app",
-            "Minecraft add-on"
+            "Minecraft Prom/Add-on"
         ]
     },
     {
@@ -514,6 +690,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ]
     },
@@ -523,6 +715,26 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "50 min"
+            },
+            {
+                type: "time-of-day",
+                value: "Morning"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ]
     },
@@ -532,6 +744,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "90 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ]
     },
@@ -541,6 +769,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "120 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
@@ -554,6 +798,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ]
     },
@@ -561,8 +821,40 @@ export const entrees = Object.freeze([
         name: "Try something new",
         tags: [
             {
-                type: "time",
-                value: "60 min"
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Mind"
+            },
+            {
+                type: "type",
+                value: "Body"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "Free+"
             }
         ],
         suggestions: [
@@ -575,6 +867,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
@@ -597,6 +905,30 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Mind"
             }
         ]
     },
@@ -606,6 +938,26 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "$$"
             }
         ]
     },
@@ -615,6 +967,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ]
     },
@@ -624,6 +992,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ],
         suggestions: [
@@ -638,6 +1022,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Mind"
             }
         ],
         suggestions: [
@@ -651,6 +1051,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Long Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ]
     },
@@ -660,6 +1076,22 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ]
     },
@@ -668,7 +1100,23 @@ export const entrees = Object.freeze([
         tags: [
             {
                 type: "time",
-                value: "?? min"
+                value: "90 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
@@ -683,6 +1131,30 @@ export const entrees = Object.freeze([
             {
                 type: "time",
                 value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Long Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
@@ -695,19 +1167,87 @@ export const sides = Object.freeze([
     {
         name: "Fidget toy",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
         ],
         suggestions: [
-            "Tangle", "Spinner", "Ring"
+            "Tangle", "Ring", "Spinner", "Stress ball"
         ]
     },
     {
         name: "Music",
         tags: [
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ]
     },
     {
         name: "Podcast",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Mind"
+            }
         ],
         suggestions: [
             "ADHD Love"
@@ -716,6 +1256,26 @@ export const sides = Object.freeze([
     {
         name: "Fun drink",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
         ],
         suggestions: [
             "Energy drink", 
@@ -730,6 +1290,26 @@ export const sides = Object.freeze([
     {
         name: "Snack",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
         ],
         suggestions: [
             "Fruit", "Chips"
@@ -741,37 +1321,169 @@ export const sides = Object.freeze([
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
             }
         ],
     },
     {
         name: "Light a candle",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ],
     },
     {
         name: "Wear perfume",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
         ],
     },
     {
         name: "Face mask",
         tags: [
+            {
+                type: "time",
+                value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
         ],
     },
     {
         name: "Sit outside",
         tags: [
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ],
     },
     {
         name: "Stand/sit",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
         ],
     },
     {
         name: "Body doubling",
         tags: [
+            {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Mind"
+            }
         ],
         suggestions: [
             "With a friend",
@@ -781,31 +1493,173 @@ export const sides = Object.freeze([
     {
         name: "Chew gum",
         tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
         ],
+    },
+    {
+        name: "Wear a blanket",
+        tags: [
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
+        ]
+    },
+    {
+        name: "Paint nails",
+        tags: [
+            {
+                type: "time",
+                value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
+        ]
     },
 ])
 
 export const desserts = Object.freeze([
     {
-        name: "Sweet treat",
+        name: "Social media",
         tags: [
+            {
+                type: "time",
+                value: "15 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ],
-        suggestions: [
-            "Candy", "Dessert"
-        ]
     },
     {
         name: "Watch YouTube",
         tags: [
+            {
+                type: "time",
+                value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ],
         suggestions: [
             "Ludwig"
         ]
     },
     {
-        name: "Social media",
+        name: "Sweet treat",
         tags: [
+            {
+                type: "time",
+                value: "15 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            },
+            {
+                type: "cost",
+                value: "$"
+            }
         ],
+        suggestions: [
+            "Candy", "Dessert", "Ice cream"
+        ]
     },
     {
         name: "Video Games",
@@ -813,6 +1667,22 @@ export const desserts = Object.freeze([
             {
                 type: "time",
                 value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
             }
         ],
         suggestions: [
@@ -832,11 +1702,55 @@ export const desserts = Object.freeze([
     {
         name: "Alone time",
         tags: [
+            {
+                type: "time",
+                value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ],
     },
     {
         name: "Listen to music",
         tags: [
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
         ],
     },
 ])
@@ -845,6 +1759,22 @@ export const specials = Object.freeze([
     {
         name: "Concert",
         tags: [
+            {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
             {
                 type: "cost",
                 value: "$$$"
@@ -857,40 +1787,113 @@ export const specials = Object.freeze([
         ]
     },
     {
+        name: "Art Museum",
+        tags: [
+            {
+                type: "time",
+                value: "90 min"
+            },
+            {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Long Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            },
+            {
+                type: "cost",
+                value: "$"
+            },
+        ],
+    },
+    {
         name: "Tattoo",
         tags: [
             {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Long Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            },
+            {
                 type: "cost",
                 value: "$$$"
-            }
+            },
         ],
-        suggestions: []
+        suggestions: [
+            "Such is life", "Vines"
+        ]
     },
     {
         name: "Piercing",
         tags: [
             {
-                type: "cost",
-                value: "$$$"
-            }
-        ],
-    },
-    {
-        name: "Art Museum",
-        tags: [
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Long Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            },
             {
                 type: "cost",
-                value: "$$"
-            }
+                value: "$$$"
+            },
         ],
+        suggestions: [
+            "Belly button", "Ears", "Septum"
+        ]
     },
     {
         name: "Trip",
         tags: [
             {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
                 type: "cost",
-                value: "$$$"
-            }
+                value: "$$$$"
+            },
         ],
         suggestions: [
             "Chicago w/ Allie"
@@ -898,12 +1901,69 @@ export const specials = Object.freeze([
     },
     {
         name: "Kayak/Canoeing",
-        tags: [],
-        suggestions: []
+        tags: [
+            {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "type",
+                value: "Body"
+            },
+            {
+                type: "cost",
+                value: "$$$"
+            },
+            {
+                type: "seasonal",
+                value: "Summer"
+            }
+        ]
     },
     {
         name: "Friends & Family",
-        tags: [],
+        tags: [
+            {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "Free"
+            },
+            {
+                type: "cost",
+                value: "$$"
+            },
+        ],
         suggestions: [
             "Game w/ friends",
             "Wing Wednesday w/ C",
@@ -913,7 +1973,40 @@ export const specials = Object.freeze([
     },
     {
         name: "Shopping",
-        tags: [],
+        tags: [
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Home"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "$"
+            },
+            {
+                type: "cost",
+                value: "$$"
+            },
+            {
+                type: "cost",
+                value: "$$$"
+            },
+        ],
         suggestions: [
             "Clothes",
             "Vinyl",
@@ -922,12 +2015,57 @@ export const specials = Object.freeze([
     },
     {
         name: "Dinner out",
-        tags: [],
+        tags: [
+            {
+                type: "time",
+                value: "45 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            },
+            {
+                type: "cost",
+                value: "$$"
+            },
+        ],
         suggestions: []
     },
     {
-        name: "Watch sunset",
+        name: "Watch sunrise/sunset",
         tags: [
+            {
+                type: "time",
+                value: "30 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Outside"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
             {
                 type: "seasonal",
                 value: "Summer"
