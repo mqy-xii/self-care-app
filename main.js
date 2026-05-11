@@ -108,3 +108,13 @@ popUpBG.addEventListener("click", () => {
 popUpClose.addEventListener("click", () => {
     closePopUp()
 })
+
+const syncHeaderHeights = () => {
+  const headers = [...document.querySelectorAll('.menu-header')];
+  headers.forEach(h => (h.style.height = 'auto'));
+  const max = Math.max(...headers.map(h => h.offsetHeight));
+  headers.forEach(h => (h.style.height = `${max}px`));
+};
+
+window.addEventListener('load', syncHeaderHeights);
+window.addEventListener('resize', syncHeaderHeights);
