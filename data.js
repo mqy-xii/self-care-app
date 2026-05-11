@@ -1320,7 +1320,7 @@ export const sides = Object.freeze([
         tags: [
             {
                 type: "time",
-                value: "60 min"
+                value: "90 min"
             },
             {
                 type: "participants",
