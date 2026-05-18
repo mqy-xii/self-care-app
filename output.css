@@ -565,6 +565,10 @@ form > .cost {
     }
   }
 }
+.svg {
+  display: inline;
+  filter: brightness(0.75);
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;

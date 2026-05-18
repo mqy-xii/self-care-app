@@ -30,6 +30,9 @@ export const appetizers = Object.freeze([
                 type: "type",
                 value: "Body"
             },
+        ],
+        suggestions: [
+            "<a href='https://maps.app.goo.gl/faJxLqZRsHm3mysz5' target='_blank'>Google Maps<img src='./images/open_in_new.svg' class='svg'></a>"
         ]
     },
     {
@@ -57,7 +60,7 @@ export const appetizers = Object.freeze([
             },
         ],
         suggestions: [
-            "Desk", "Floor"
+            "Desk", "Floor", "Closet"
         ]
     },
     {
@@ -105,9 +108,6 @@ export const appetizers = Object.freeze([
                 value: "Body"
             },
         ],
-        suggestions: [
-            "Desk", "Floor"
-        ]
     },
     {
         name: "Doodle",
@@ -136,6 +136,9 @@ export const appetizers = Object.freeze([
                 type: "type",
                 value: "Soul"
             }
+        ],
+        suggestions: [
+            "Make an OC (ArtFight)"
         ]
     },
     {
@@ -433,7 +436,7 @@ export const appetizers = Object.freeze([
             }
         ],
         suggestions: [
-            "Example: stare at the other side of the room after working on the computer for an hour"
+            "Stare at the other side of the room after working on the computer for an hour"
         ]
     },
 ])
@@ -530,9 +533,8 @@ export const entrees = Object.freeze([
         ],
         suggestions: [
             "Convenience Store Woman",
-            "HSP Toolkit",
             "Chainsaw Man Pt. 2",
-            "<a href='https://pagebound.co/users/maylee' target='_blank'>More... (PageBound)</a>"
+            "<a href='https://pagebound.co/users/maylee' target='_blank'>More...<img src='./images/open_in_new.svg' class='svg'></a>"
         ]
     },
     {
@@ -789,7 +791,7 @@ export const entrees = Object.freeze([
         ],
         suggestions: [
             "Hunger Games",
-            "<a href='https://letterboxd.com/talchao/watchlist/' target='_blank'>More... (Letterboxd)</a>"
+            "<a href='https://letterboxd.com/talchao/watchlist/' target='_blank'>More...<img src='./images/open_in_new.svg' class='svg'></a>"
         ]
     },
     {
@@ -858,7 +860,7 @@ export const entrees = Object.freeze([
             }
         ],
         suggestions: [
-            "Visit a cafe"
+            "<a href='https://maps.app.goo.gl/faJxLqZRsHm3mysz5' target='_blank'>Visit a cafe<img src='./images/open_in_new.svg' class='svg'></a>"
         ]
     },
     {
@@ -1112,7 +1114,7 @@ export const entrees = Object.freeze([
             },
             {
                 type: "location",
-                value: "Home"
+                value: "Outside"
             },
             {
                 type: "type",
@@ -1122,7 +1124,8 @@ export const entrees = Object.freeze([
         suggestions: [
             "Hike",
             "Picnic",
-            "Plein air"
+            "Plein air",
+            "<a href='https://maps.app.goo.gl/W2327p8Sw4fnoaRj9' target='_blank'>Google Maps<img src='./images/open_in_new.svg' class='svg'></a>"
         ]
     },
     {
@@ -1819,6 +1822,10 @@ export const specials = Object.freeze([
         name: "Tattoo",
         tags: [
             {
+                type: "time",
+                value: "90 min"
+            },
+            {
                 type: "participants",
                 value: "Solo+"
             },
@@ -1846,6 +1853,10 @@ export const specials = Object.freeze([
     {
         name: "Piercing",
         tags: [
+            {
+                type: "time",
+                value: "90 min"
+            },
             {
                 type: "participants",
                 value: "Solo+"
@@ -1928,12 +1939,55 @@ export const specials = Object.freeze([
             }
         ]
     },
+    // {
+    //     name: "Friends & Family",
+    //     tags: [
+    //         {
+    //             type: "participants",
+    //             value: "Group"
+    //         },
+    //         {
+    //             type: "length",
+    //             value: "Short Term"
+    //         },
+    //         {
+    //             type: "location",
+    //             value: "Home"
+    //         },
+    //         {
+    //             type: "location",
+    //             value: "Outside"
+    //         },
+    //         {
+    //             type: "location",
+    //             value: "Public"
+    //         },
+    //         {
+    //             type: "type",
+    //             value: "Soul"
+    //         },
+    //         {
+    //             type: "cost",
+    //             value: "Free"
+    //         },
+    //         {
+    //             type: "cost",
+    //             value: "$$"
+    //         },
+    //     ],
+    //     suggestions: [
+    //         "Game w/ friends",
+    //         "Wing Wednesday w/ C",
+    //         "Call w/ Keira",
+    //         "Photoshoot w/ Jojo",
+    //     ]
+    // },
     {
-        name: "Friends & Family",
+        name: "Online shopping",
         tags: [
             {
                 type: "participants",
-                value: "Group"
+                value: "Solo"
             },
             {
                 type: "length",
@@ -1944,63 +1998,8 @@ export const specials = Object.freeze([
                 value: "Home"
             },
             {
-                type: "location",
-                value: "Outside"
-            },
-            {
-                type: "location",
-                value: "Public"
-            },
-            {
                 type: "type",
                 value: "Soul"
-            },
-            {
-                type: "cost",
-                value: "Free"
-            },
-            {
-                type: "cost",
-                value: "$$"
-            },
-        ],
-        suggestions: [
-            "Game w/ friends",
-            "Wing Wednesday w/ C",
-            "Call w/ Keira",
-            "Photoshoot w/ Jojo",
-        ]
-    },
-    {
-        name: "Shopping",
-        tags: [
-            {
-                type: "participants",
-                value: "Solo+"
-            },
-            {
-                type: "length",
-                value: "Short Term"
-            },
-            {
-                type: "location",
-                value: "Home"
-            },
-            {
-                type: "location",
-                value: "Public"
-            },
-            {
-                type: "type",
-                value: "Soul"
-            },
-            {
-                type: "cost",
-                value: "$"
-            },
-            {
-                type: "cost",
-                value: "$$"
             },
             {
                 type: "cost",
@@ -2011,6 +2010,41 @@ export const specials = Object.freeze([
             "Clothes",
             "Vinyl",
             "MP3 player"
+        ]
+    },
+    {
+        name: "Thrift",
+        tags: [
+            {
+                type: "time",
+                value: "120 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "$$$"
+            },
+        ],
+        suggestions: [
+            "Ross",
+            "Goodwill",
+            "Savers",
+            "<a href='https://maps.app.goo.gl/sB1znZXq8TrQR3Uv8' target='_blank'>Google Maps<img src='./images/open_in_new.svg' class='svg'></a>"
         ]
     },
     {
@@ -2041,7 +2075,10 @@ export const specials = Object.freeze([
                 value: "$$"
             },
         ],
-        suggestions: []
+        suggestions: [
+            "Wing Wednesday w/ C",
+            "<a href='https://maps.app.goo.gl/iKcok6Spn3DRxvjX7' target='_blank'>Google Maps<img src='./images/open_in_new.svg' class='svg'></a>"
+        ]
     },
     {
         name: "Watch sunrise/sunset",
@@ -2071,5 +2108,218 @@ export const specials = Object.freeze([
                 value: "Summer"
             }
         ]
-    }
+    },
+    {
+        name: "Visit the mall",
+        tags: [
+            {
+                type: "time",
+                value: "180 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "$$$"
+            },
+        ],
+        suggestions: [
+            "<a href='https://maps.app.goo.gl/6L1atVG4k3qF3Tbp7' target='_blank'>Route (Google Maps)<img src='./images/open_in_new.svg' class='svg'></a>",
+            "Hot Topic",
+            "Spencer's",
+            "Vintage Stock",
+            "Slackers",
+            "Barnes & Noble"
+        ]
+    },
+    {
+        name: "Visit the library",
+        tags: [
+            {
+                type: "time",
+                value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Mind"
+            }
+        ],
+        suggestions: []
+    },
+    {
+        name: "Explore the city",
+        tags: [
+            {
+                type: "time",
+                value: "120 min"
+            },
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
+        ],
+        suggestions: [
+            "Belleville",
+            "STL",
+            "w/ Jace"
+        ]
+    },
+    {
+        name: "Go to a Pokémon card show",
+        tags: [
+            {
+                type: "time",
+                value: "180 min"
+            },
+            {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "$$$"
+            }
+        ],
+        suggestions: [
+            "<a href='https://collinsvillecardshow.com/events/' target='_blank'>Collinsville<img src='./images/open_in_new.svg' class='svg'></a>",
+            "w/ Allie"
+        ]
+    },
+    {
+        name: "Makeup color match",
+        tags: [
+            {
+                type: "time",
+                value: "120 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Long Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Body"
+            }
+        ],
+        suggestions: [
+            "Ulta Target(?)",
+            "Ulta (Fairview)",
+            "Sephora (Fairview)"
+        ]
+    },
+    {
+        name: "Photo shoot",
+        tags: [
+            {
+                type: "time",
+                value: "120 min"
+            },
+            {
+                type: "participants",
+                value: "Group"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            }
+        ],
+        suggestions: [
+            "<a href='https://maps.app.goo.gl/DEDn5fynSdD1gLxy9' target='_blank'>Google Maps<img src='./images/open_in_new.svg' class='svg'></a>",
+            "w/ Jojo"
+        ]
+    },
+    {
+        name: "Join club/class",
+        tags: [
+            {
+                type: "participants",
+                value: "Solo+"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Soul"
+            },
+            {
+                type: "cost",
+                value: "$$$"
+            }
+        ],
+        suggestions: [
+            "Art", "Improv"
+        ]
+    },
 ])

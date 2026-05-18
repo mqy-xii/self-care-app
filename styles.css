@@ -176,3 +176,8 @@ form > .cost {
 #sides-button {
     @apply bg-cyan-600 text-teal-50 object-left pt-2 pb-2 pl-4 pr-4 hover:bg-cyan-700 rounded-xl w-full mt-1
 }
+
+.svg {
+    display: inline;
+    filter: brightness(0.75);
+}
