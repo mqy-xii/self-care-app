@@ -1163,6 +1163,32 @@ export const entrees = Object.freeze([
         suggestions: [
             "Finish blanket"
         ]
+    },
+    {
+        name: "Visit the library",
+        tags: [
+            {
+                type: "time",
+                value: "60 min"
+            },
+            {
+                type: "participants",
+                value: "Solo"
+            },
+            {
+                type: "length",
+                value: "Short Term"
+            },
+            {
+                type: "location",
+                value: "Public"
+            },
+            {
+                type: "type",
+                value: "Mind"
+            }
+        ],
+        suggestions: []
     }
 ])
 
@@ -2145,32 +2171,6 @@ export const specials = Object.freeze([
             "Slackers",
             "Barnes & Noble"
         ]
-    },
-    {
-        name: "Visit the library",
-        tags: [
-            {
-                type: "time",
-                value: "60 min"
-            },
-            {
-                type: "participants",
-                value: "Solo"
-            },
-            {
-                type: "length",
-                value: "Short Term"
-            },
-            {
-                type: "location",
-                value: "Public"
-            },
-            {
-                type: "type",
-                value: "Mind"
-            }
-        ],
-        suggestions: []
     },
     {
         name: "Explore the city",
